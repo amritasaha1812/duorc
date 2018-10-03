@@ -7,10 +7,10 @@
 * [Step 5] : Running the above step would create a json file in the output folder.
 * [Step 6] : output/dataset_augmented_with_paraphrases_and_embedding_and_coref_and_skipthoughts.json contains the preprocessed ParaphraseRC dataset, i.e. for every movie, it contains a dictionary over each of its questions and its relevant subplot extracted by the preprocessing and the corresponding answer. It is organized in the form
 ```
-{ 'movie_id': {<br />
-	'question1': {'relevant_plot': [Sentence_1, Sentence_2, ... Sentence_k], 'answers':[String_1,String_2, ... String_m]},<br />
-	'question2': {'relevant_plot': [Sentence_1, Sentence_2, ... Sentence_k], 'answers':[String_1,String_2, ... String_m]},<br />
-	   ...	<br />
-   }<br />
-}<br />
+{ 'movie_id': {
+	'question1': {'relevant_plot': [Sentence_1, Sentence_2, ... Sentence_k], 'answers':[String_1,String_2, ... String_m]},
+	'question2': {'relevant_plot': [Sentence_1, Sentence_2, ... Sentence_k], 'answers':[String_1,String_2, ... String_m]},
+	   ...	
+   }
+}
 ```		
