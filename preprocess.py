@@ -392,4 +392,4 @@ for movie in movies[min_index:max_index]:
 			sys.stdout.flush()
 			#print '-------------------------------------------------------------------\n'
 		new_dataset[movie][q] = {"relevant_plot":relevant_sents, "answers":original_a_s, "answer_entities":a_s_entities, "answer_nps":a_s_noun_phrases, "answer_vps":a_s_verb_phrases, "answer_keywords":a_s_keywords}
-json.dump(new_dataset, open('new_preprocessed_'+sys.argv[1]+'.json','w'))		
+json.dump(new_dataset, open('output/new_preprocessed_'+sys.argv[1]+'.json','w'))		
