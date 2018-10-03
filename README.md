@@ -1,5 +1,5 @@
 ##Steps to run preprocessing
-
+* [Step 0] : pip install -r requirements.txt
 * [Step 1] : Download lucene_index_9m.zip from https://drive.google.com/file/d/1ccZSys8u4F_mqNJ97OOlSLe3fjpFLhdv/view?usp=sharing and extract it inside utils folder
 * [Step 2] : Extract utils/all_movie_data.pkl.zip 
 * [Step 3] : Extract output.zip
