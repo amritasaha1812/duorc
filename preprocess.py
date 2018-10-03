@@ -289,8 +289,10 @@ num_q_with_ans_spotted = 0
 old_dataset = {}#json.load(open('old_preprocessed.json'))
 new_dataset = {}
 movies = dataset.keys()
-min_index = 400*int(sys.argv[1])
-max_index = min(len(movies),400*(int(sys.argv[1])+1))
+batch_size = int(sys.argv[2])
+batch_number = int(sys.argv[1])
+min_index = batch_size*batch_number
+max_index = min(len(movies),batch_size*(batch_number+1))
 for movie in movies[min_index:max_index]:
 	#bigger_plot = handle_unicode(get_bigger(movie))
 	bigger_plot = handle_unicode(coref_resolved_data[movie])
